@@ -1,0 +1,38 @@
+img {
+  width: 100%;
+}
+
+/* для родителя указываем position: relative; */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden; /* прячем то, что вылвзит за пределы */
+}
+
+/* для детей указываем position: absolute; */
+.slider-container .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 1000ms ease;
+  /* transform: translateX(-100%); */
+}
+
+.slider-container .slide img {
+  height: 100%;
+}
+
+/* Можно реализовать так, но лучше через js
+.slider-container .slide:nth-child(1n) {
+  transform: translateX(0%);
+}
+
+.slider-container .slide:nth-child(2n) {
+  transform: translateX(100%);
+}
+
+.slider-container .slide:nth-child(3n) {
+  transform: translateX(200%);
+}
+*/

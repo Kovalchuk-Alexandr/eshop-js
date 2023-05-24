@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pushster&display=swap");
+/****** ---------- Общие настройки ----------**** */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.app {
+  background: beige;
+  width: 100%;
+  border: 1.5px solid silver;
+}
+
+/****** ---------- Заголовок ----------**** */
+header .logo {
+  font-family: "Pushster", cursive;
+  /* делаем лого текстом, чтобы можно было добавлять свойства */
+  display: inline-block;
+  background: #f9f9f9;
+  font-size: 25px;
+  width: 100%;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px 0;
+  color: #c73e2e;
+}
+
+header .fav-films {
+  background: #c73e2e;
+  height: 100px;
+}
+
+header .fav-films ul {
+  list-style: none;
+  margin: 0;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+header .fav-films ul li {
+  margin: 0 10px;
+}
+
+header .fav-films ul img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+header .fav-films ul span {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+/****** ---------- Main ----------**** */
+main.films {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid silver;
+}
+
+.film {
+  margin-bottom: 15px;
+}
+
+.film img {
+  width: 50px;
+  height: 50px;
+}
+
+.film h2 {
+  display: inline; /* ставим заголовок в одну линию */
+  margin-left: 10px;
+}
+
+.film button {
+  float: right;
+}

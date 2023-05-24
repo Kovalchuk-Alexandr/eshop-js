@@ -1,0 +1,32 @@
+//JS клиентская и серверная часть
+npm init -y
+npm  i nodemon -D
+npm i express mongoose
+npm i @types/express
+
+tsc --init
+
+//в tsconfig.json
+раскоментируем "outDir": "./"
+
+// добавляем
+"exclude": ["node_modules"],
+  "include": ["dev"]
+
+// создаем
+dev/app.ts
+
+tsc -w (--watch)
+npm start
+
+// создаем файл конфигурации подключения к mongodb
+dev/config.ts
+
+// запускаем сервер
+// "C:\Program Files\MongoDB\Server\6.0\bin\mongod.exe" --dbpath="d:\data\db"
+//  mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.2
+mongo
+mongosh
+
+// !!!!!!  При ошибке при переходе между адресами серверов !!!!!!
+npm i cors  	  	
